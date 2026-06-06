@@ -1,0 +1,6 @@
+<!-- PLACEHOLDER: Replace with final WyrdWyrks logo from your engineer -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" stroke="#ff6a00" stroke-width="1.5" fill="none"/>
+  <polygon points="20,8 32,14 32,26 20,32 8,26 8,14" stroke="#ff6a00" stroke-width="1" fill="rgba(255,106,0,0.08)"/>
+  <text x="20" y="24" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#ff6a00">WW</text>
+</svg>
