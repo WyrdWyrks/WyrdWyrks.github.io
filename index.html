@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WyrdWyrks — Built for the Wasteland</title>
-  <meta name="description" content="WyrdWyrks builds tools for the people who build tomorrow. Forged in the ruins, wired for the future." />
+  <title>WyrdWyrks — Alt-tech for the Cyberpunk Space Future</title>
+  <meta name="description" content='WyrdWyrks builds Wyrd (pronounced "weird\") electronics for makers, hackers, hikers, and futurists.' />
   <link rel="icon" type="image/svg+xml" href="assets/svg/logo-placeholder.svg" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -30,13 +30,21 @@
     <div class="hero-grid"></div>
     <div class="container hero-content">
       <div class="hero-eyebrow">
-        <span class="tag">Est. 2024</span>
+        <span class="tag">Starting small fires since 2020</span>
       </div>
-      <h1>Built for<br>the <span class="accent">Wasteland</span></h1>
-      <p class="hero-sub">// WYRDWYRKS SYSTEMS — WIRED FOR THE FUTURE</p>
+      <h1>Alt-tech for the <br> <span class="accent">Cyberpunk Wasteland</span></h1>
+      <p class="hero-sub">// BUILDING SATISFYING, GLOWING, CHUNKY, ALTERNATIVE ELECTRONICS</p>
       <p class="hero-desc">
-        We build tools for the people who build tomorrow. No chrome veneer. No corporate soft-focus.
-        Just hard-forged software for hard problems.
+		Wyrdwyrks echews the values of big tech companies. We design stuff we want to use. We give you full control over your product.
+      </p>
+	  
+	  <p class="hero-desc">
+	    If you want flat slabs of glass, minimalism, "thin-and-light", and corporate walled gardens: look elsewhere.
+	  </p>
+	  
+	  <p class="hero-desc">
+        If you want a neat piece of tech that is tactile, tactical, and practical (okay, maybe not this one), look no further than the <a href="products.html">Celestial Wayfinder</a>
+		-- available in August 2026!
       </p>
       <div class="hero-actions">
         <a href="products.html" class="btn btn-primary">View Products</a>
@@ -51,32 +59,31 @@
       <div class="about-grid">
         <div>
           <span class="tag">About WyrdWyrks</span>
-          <h2 style="margin-top:1rem; color:var(--text)">We Don't<br><span style="color:var(--amber)">Polish Rust.</span></h2>
+          <h2 style="margin-top:1rem; color:var(--text)">We are several<br><span style="color:var(--amber)"> makers in a trenchcoat</span></h2>
           <p style="margin-top:1rem">
-            WyrdWyrks was built by engineers who were tired of the gap between what software
-            promises and what it actually delivers. We build tools that are honest about what they
-            are — stripped back, purpose-built, and ready to work in conditions others won't.
+            WyrdWyrks is a tech collective built by engineers who were tired of unsatisfying devices. We think everything should have a clicky button, a haptic feedback motor, and copious amounts of (configurable!) RGB LEDs. 
           </p>
           <p style="margin-top:1rem">
-            Cyberpunk aesthetics, post-apocalyptic resilience. We're not here to look pretty.
-            We're here to work.
+            All design is done in-house (or in-apartment). WyrdWyrks has software/hardware/firmware engineers, designers, marketers, and technologists. 
+			
+			<a href="products.html">Celestial Wayfinder Badge</a>!
           </p>
           <div class="about-stats">
             <div class="stat">
               <div class="stat-number">100%</div>
-              <div class="stat-label">Indie Built</div>
+              <div class="stat-label">Reckless abandon</div>
             </div>
             <div class="stat">
               <div class="stat-number">0</div>
-              <div class="stat-label">VC Strings</div>
+              <div class="stat-label">VC Investors <br>(and we don't want any!)</div>
             </div>
             <div class="stat">
-              <div class="stat-number">∞</div>
+              <div class="stat-number">INT_MAX</div>
               <div class="stat-label">Stubbornness</div>
             </div>
             <div class="stat">
-              <div class="stat-number">24/7</div>
-              <div class="stat-label">Uptime Goal</div>
+              <div class="stat-number">Entirely</div>
+              <div class="stat-label">self-funded</div>
             </div>
           </div>
         </div>
@@ -102,9 +109,14 @@
   <section id="products">
     <div class="container">
       <div class="section-header">
-        <span class="tag">Now Available</span>
+        <span class="tag">Now Available!</span>
         <h2 style="margin-top:1rem">The <span style="color:var(--amber)">Celestial Wayfinder</span></h2>
-        <p>A DEF CON badge built for the world outside the grid. LoRa radio, GPS, compass, and a flashlight — in one hand-built device.</p>
+        <p>A DEF CON badge built for on-grid and off-grid hackability. It has an ESP32-S3 MCU, 915MHz LoRa radio, GPS, digital LED compass, mechanical keyboard switches, and a tactile encoder. 
+		
+		   Rounding out the UI is a 128x128 pixel OLED screen, a haptic feedback motor, and a miniature magnetic buzzer.</p>
+		   
+		<p>The badge is has open-source firmware for your hacking pleasure, an electronic module system using card-edge connectors, and
+		a standard for cosmetic customization so you can tune the device to fit your aesthetic and environment!</p>
       </div>
       <div class="featured-product">
         <div class="featured-product-visual">
@@ -148,18 +160,19 @@
             Find each other.<br>Off the grid.
           </h3>
           <p style="margin-bottom:1.5rem">
-            The Celestial Wayfinder broadcasts your GPS coordinates over LoRa radio — no cell service, no internet, no infrastructure.
-            Other Wayfinders in range receive your position and their LED compass ring swings to point directly at you.
+            The Celestial Wayfinder broadcasts your GPS coordinates over LoRa radio when you send a message — no external infrastructure needed.
+            Other Wayfinders in range receive your position and their LED compass ring points at the source of your message.
           </p>
           <ul class="feature-list" style="margin-bottom:2rem">
-            <li>LoRa mesh radio — self-healing, zero config, no infrastructure</li>
-            <li>GPS location broadcasting to every badge in range</li>
-            <li>LED ring compass points directly toward other badge holders</li>
-            <li>Sharp Memory-in-Pixel display — daylight readable, always on</li>
-            <li>SOS button — repeating distress ping every 15 seconds</li>
-            <li>Piezo buzzer alerts on incoming messages</li>
-            <li>6-LED flashlight, 5× mechanical keyboard switches</li>
-            <li>~1 hour charge time, smart auto-shutdown</li>
+            <li>Radio: 915MHz LoRa mesh radio — self-healing, zero config, no infrastructure</li>
+		    <li>Microcontroller: ESP32-S3 Microcontroller with 16MB of Flash</li>
+            <li>Payload: GPS location + name + message payload, broadcast to every badge in range</li>
+            <li>Wayfinding: LED compass ring points directly toward source of a received message</li>
+            <li>Display: 128x128 pixel, 1.5" OLED display. Retro, but satisfying.</li>
+            <li>User Interface: easy 4-button UI can be learned in seconds</li>
+            <li>Tactile: 5× mechanical keyboard switches, haptic motor, magnetic buzzer, and encoder with detents</li>
+            <li>Portable: rechargable lithium-ion battery, ~1hr charge time</li>
+			<li>Power Input: USB-C, or auxilary 4-20VDC input with optional barrel jack</li>
           </ul>
           <a href="products.html" class="btn btn-primary">See Full Specs →</a>
         </div>
@@ -170,17 +183,16 @@
   <!-- ── MANIFESTO ───────────────────────────────────────── -->
   <div class="manifesto">
     <blockquote>
-      "The future isn't chrome and neon.<br>
-      It's <em>duct tape, ingenuity,</em><br>
-      and people who refuse to quit."
-      <cite>— WyrdWyrks</cite>
+      "Science isn't about why<br>
+      It's about <em>why not</em>!"<br>
+      <cite>— Cave Johnson</cite>
     </blockquote>
   </div>
 
   <!-- ── FOOTER ─────────────────────────────────────────── -->
   <footer>
     <div class="container footer-inner">
-      <span class="footer-copy">© 2024 WyrdWyrks. All rights reserved.</span>
+      <span class="footer-copy">© 2026 WyrdWyrks. All rights reserved.</span>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Celestial Wayfinder Badge</a></li>
