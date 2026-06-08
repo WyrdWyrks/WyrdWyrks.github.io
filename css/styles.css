@@ -4,6 +4,48 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap');
 
+/* ── UNDER CONSTRUCTION BANNER ───────────────────────────── */
+.construction-banner {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ff6a00,
+    #ff6a00 12px,
+    #1a1108 12px,
+    #1a1108 24px
+  );
+  padding: 0.6rem 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 200;
+}
+
+.construction-banner-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(6, 5, 4, 0.82);
+  padding: 0.35em 1.25em;
+  backdrop-filter: blur(4px);
+}
+
+.construction-banner-inner span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.construction-banner-inner a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ── TOKENS ───────────────────────────────────────────────── */
 :root {
   --bg:           #060504;
