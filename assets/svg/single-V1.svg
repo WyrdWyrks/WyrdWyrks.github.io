@@ -30,13 +30,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="658.66996"
-     inkscape:cy="383.60543"
+     inkscape:zoom="1"
+     inkscape:cx="756.99998"
+     inkscape:cy="432.49999"
      inkscape:window-width="1920"
-     inkscape:window-height="1080"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -56,14 +56,14 @@
        class="amber-dim"
        d="M 118.52093 106.73405 L 118.52093 116.81768 A 25 25 0 0 0 141.53865 132.06171 A 25 25 0 0 0 155.28354 127.94413 L 155.28354 106.73405 L 118.52093 106.73405 z " />
     <rect
-       style="fill:#000000;fill-opacity:1;stroke-width:0.23156;stroke-dasharray:none"
+       style="fill:#666666;fill-opacity:1;stroke-width:0.23156;stroke-dasharray:none"
        id="rect2"
        width="77.570824"
        height="36.027645"
        x="147.28775"
        y="96.398727" />
     <circle
-       style="fill:#000000;fill-opacity:1;stroke-width:0.29898;stroke-dasharray:none"
+       style="fill:#666666;fill-opacity:1;stroke-width:0.29898;stroke-dasharray:none"
        id="path2"
        cx="141.59796"
        cy="107.25102"
@@ -255,5 +255,12 @@
        x="136.78294"
        y="106.90025"
        class="cyan" />
+    <rect
+       style="fill:#595959;fill-opacity:1;stroke-width:0.419361"
+       id="rect8-5"
+       width="77.603905"
+       height="3.3559811"
+       x="147.22569"
+       y="129.06805" />
   </g>
 </svg>
