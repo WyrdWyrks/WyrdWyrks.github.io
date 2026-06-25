@@ -26,8 +26,11 @@
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="celestial-wayfinder.html" class="active">Products</a></li>
+        <li><a href="celestial-wayfinder.html" class="active">Celestial Wayfinder</a></li>
       </ul>
+      <button class="nav-menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -43,11 +46,21 @@
           Just LoRa mesh radio, GPS, and a ring of LEDs that points the way.
         </p>
         <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; align-items:center">
-          <!-- Replace href with your Stripe Payment Link -->
-          <a href="https://buy.stripe.com/REPLACE_ME" class="btn btn-primary">Reserve Yours — Pick Up at DEF CON →</a>
+          <a href="https://buy.stripe.com/REPLACE_ME_COMPLETE" class="btn btn-primary">Complete — $150&nbsp;→</a>
+          <a href="https://buy.stripe.com/REPLACE_ME_DIY" class="btn btn-outline">DIY Kit — $125&nbsp;→</a>
+        </div>
+        <div style="margin-top:1.25rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1rem;">
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:0.4rem;">COMPLETE · $150</div>
+            <p style="font-size:0.85rem; color:var(--text-dim); max-width:none;">Clamshell case, pre-soldered Cherry MX switches, keycaps, and encoder knob — ready to use out of the box.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:0.4rem;">DIY KIT · $125</div>
+            <p style="font-size:0.85rem; color:var(--text-dim); max-width:none;">Minimal case with unsoldered switch sockets. Bring your own Cherry MX-compatible switches and make it yours.</p>
+          </div>
         </div>
         <p style="margin-top:1rem; font-family:var(--font-mono); font-size:0.72rem; color:var(--text-dim); letter-spacing:0.08em">
-          // PRICE TBD &nbsp;·&nbsp; PICKUP AT DEF CON &nbsp;·&nbsp; LIMITED RUN
+          // LIMITED QUANTITY · DEF CON PICKUP ONLY
         </p>
       </div>
       <!-- Badge schematic SVG -->
@@ -156,7 +169,7 @@
         <span class="tag">Full Specs</span>
         <h2 style="margin-top:1rem; color:var(--text)">Everything <span style="color:var(--amber)">under the hood</span></h2>
       </div>
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2px; background:var(--border);">
+      <div class="specs-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap:2px; background:var(--border);">
 
         <div style="background:var(--bg-card); padding:3rem;">
           <span class="tag" style="margin-bottom:1.5rem; display:inline-block">Hardware</span>
@@ -236,7 +249,7 @@
         <a href="https://buy.stripe.com/REPLACE_ME" class="btn btn-primary" style="font-size:1.1rem; padding:0.85em 2.5em">
           Reserve Now →
         </a>
-        <span style="font-size:0.7rem; letter-spacing:0.12em; color:var(--text-muted)">PRICE TBD &nbsp;·&nbsp; LIMITED QUANTITY &nbsp;·&nbsp; DEF CON PICKUP ONLY</span>
+        <span style="font-size:0.7rem; letter-spacing:0.12em; color:var(--text-muted)">PRICE TBD · LIMITED QUANTITY · DEF CON PICKUP ONLY</span>
       </cite>
     </blockquote>
   </div>

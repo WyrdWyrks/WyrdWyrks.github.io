@@ -1,5 +1,16 @@
 // WyrdWyrks — main.js
 
+// Mobile nav hamburger
+(function () {
+  const btn = document.querySelector('.nav-menu-btn');
+  const links = document.querySelector('.nav-links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', () => links.classList.toggle('open'));
+  links.addEventListener('click', e => {
+    if (e.target.tagName === 'A') links.classList.remove('open');
+  });
+})();
+
 // Active nav link
 (function () {
   const links = document.querySelectorAll('.nav-links a');
