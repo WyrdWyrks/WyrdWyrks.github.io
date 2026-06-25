@@ -352,7 +352,7 @@ nav {
 .btn-outline {
   background: transparent;
   color: var(--cyan);
-  border: 1px solid var(--cyan-dim);
+  border: 2px solid var(--cyan-dim);
   clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
 }
 
