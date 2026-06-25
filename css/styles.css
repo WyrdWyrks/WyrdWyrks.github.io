@@ -696,6 +696,37 @@ footer {
   margin-top: 0.1em;
 }
 
+/* ── NAV DROPDOWN ─────────────────────────────────────────── */
+.nav-has-child { position: relative; }
+
+.nav-sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background: rgba(6, 5, 4, 0.97);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--cyan);
+  padding: 0.75rem 0 0.6rem;
+  min-width: 160px;
+  z-index: 101;
+}
+
+.nav-sub a {
+  display: block;
+  padding: 0.4rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cyan) !important;
+}
+
+.nav-sub a:hover { color: var(--text) !important; }
+
+.nav-has-child:hover .nav-sub { display: block; }
+
 /* ── HAMBURGER BUTTON ─────────────────────────────────────── */
 .nav-menu-btn {
   display: none;
@@ -743,6 +774,19 @@ footer {
   }
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 0.9rem; }
+
+  /* sub-nav always visible and indented in mobile menu */
+  .nav-sub {
+    display: block;
+    position: static;
+    background: none;
+    border: none;
+    border-left: 1px solid var(--cyan-dim);
+    margin-left: 0.75rem;
+    padding: 0.4rem 0 0 0;
+    min-width: unset;
+  }
+  .nav-sub a { padding: 0.3rem 0.75rem; font-size: 0.75rem; }
 
   /* prevent text overflow — grid cells default to min-width:auto, must override */
   p { max-width: 100% !important; overflow-wrap: break-word; }
