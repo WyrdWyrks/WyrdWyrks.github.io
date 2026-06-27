@@ -217,12 +217,42 @@
           </ul>
           <span class="tag" style="margin-top:2rem; margin-bottom:1.5rem; display:inline-block">Firmware</span>
           <ul class="feature-list">
-            <li>FreeRTOS: fully task-based architecture</li>
-            <li>Custom LoRa mesh: self-healing, zero config</li>
+            <li>Custom LoRa mesh: self-healing, minimal config</li>
             <li>Custom windowing UI system</li>
             <li>Flash-persisted saved messages and locations</li>
             <li>Open source</li>
           </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OPEN SOURCE ───────────────────────────────────────── -->
+  <section style="padding-block: 0 5rem;">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Open Source</span>
+        <h2 style="margin-top:1rem; color:var(--text)">Open source.<br><span style="color:var(--amber)">No strings attached.</span></h2>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1.5px; background:var(--border);">
+
+        <div style="background:var(--bg-card); padding:2.5rem; display:flex; flex-direction:column;">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">APPLICATION FIRMWARE</div>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">Celestial Wayfinder</h3>
+          <p style="font-size:0.95rem; margin-bottom:1.5rem; flex:1">The badge firmware. Hardware init, application windows, LoRa message definitions, and the glue between the hardware and the library.</p>
+          <a href="https://github.com/WyrdWyrks/Celestial-Wayfinder" target="_blank" rel="noopener" style="font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--cyan)">View on GitHub ↗</a>
+        </div>
+
+        <div style="background:var(--bg-card); padding:2.5rem; display:flex; flex-direction:column;">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">CORE LIBRARY</div>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">esp32-utilities</h3>
+          <p style="font-size:0.95rem; margin-bottom:1.5rem; flex:1">
+            The reusable ESP32 library underneath the badge. 
+            LoRa mesh, LED animations, Adafruit_GFX-based UI, 
+            GPS navigation, MessagePack filesystem, and RPC. 
+            Designed to be consumed by other projects.</p>
+          <a href="https://github.com/WyrdWyrks/esp32-utilities" target="_blank" rel="noopener" style="font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--cyan)">View on GitHub ↗</a>
         </div>
 
       </div>
