@@ -44,11 +44,10 @@
     <div class="page-hero-bg"></div>
     <div class="container" style="position:relative; z-index:1; display:grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items:center;">
       <div>
-        <span class="tag" style="margin-bottom:1rem; display:inline-block">DEF CON Badge · v3</span>
+        <span class="tag" style="margin-bottom:1rem; display:inline-block">DEF CON Badge</span>
         <h1>Celestial<br><span style="color:var(--amber)">Wayfinder</span></h1>
         <p style="margin-top:1.25rem; font-size:1.1rem; max-width:48ch">
-          Find your people. No cell towers. No apps. No internet.
-          Just LoRa mesh radio, GPS, and a ring of LEDs that points the way.
+          A LoRa mesh badge that maps who's where and what's happening.
         </p>
         <div style="margin-top:2rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
           <div>
@@ -95,26 +94,20 @@
 
         <div style="background:var(--bg-card); padding:2.5rem;">
           <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:1.25rem;">01 // BROADCAST</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Your location, over the air</h3>
-          <p style="font-size:0.95rem">Lock onto GPS satellites and broadcast your coordinates, username, and a status message over LoRa. Power it on and you're transmitting — no pairing, no setup.</p>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">Ping your location</h3>
+          <p style="font-size:0.95rem">Lock onto GPS satellites and broadcast your coordinates, username, a status message, and a color over LoRa. Minimal to no setup required.</p>
         </div>
 
         <div style="background:var(--bg-card); padding:2.5rem;">
           <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:1.25rem;">02 // MESH</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">The network builds itself</h3>
-          <p style="font-size:0.95rem">Every Wayfinder in range automatically relays pings it hears to badges further out. The mesh extends your reach well beyond direct radio line-of-sight — zero configuration required.</p>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">The mesh builds itself</h3>
+          <p style="font-size:0.95rem">Every Wayfinder in range automatically relays pings it hears to badges further out. The mesh extends your reach well beyond direct radio line-of-sight.</p>
         </div>
 
         <div style="background:var(--bg-card); padding:2.5rem;">
           <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:1.25rem;">03 // NAVIGATE</div>
           <h3 style="color:var(--text); margin-bottom:0.75rem">The ring points the way</h3>
-          <p style="font-size:0.95rem">A ring of LEDs acts as a live compass, rotating to point directly toward other badge holders. No map. No screen to stare at. Just look at the light and walk.</p>
-        </div>
-
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:1.25rem;">04 // SOS</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">One button emergency broadcast</h3>
-          <p style="font-size:0.95rem">A dedicated SOS button broadcasts a repeating distress ping every 15 seconds with your GPS coordinates until you cancel it. Every Wayfinder in range gets notified and the LED ring pulses to alert them.</p>
+          <p style="font-size:0.95rem">A ring of LEDs acts as a live compass, rotating to point directly toward other badge holders.</p>
         </div>
 
       </div>
@@ -127,45 +120,45 @@
       <div class="section-header">
         <span class="tag">V3 Hardware</span>
         <h2 style="margin-top:1rem; color:var(--text)">Built different.<br><span style="color:var(--amber)">On purpose.</span></h2>
-        <p>Every component decision is intentional. Tactile feel over production cost. Daylight readability over power savings. Field reliability over lab performance.</p>
+        <p>Third iteration: Refined through real-world testing at festivals, conventions, and outdoor events.</p>
       </div>
 
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1.5px; background:var(--border);">
 
         <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">DISPLAY</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Sharp Memory-in-Pixel</h3>
-          <p style="font-size:0.95rem">Previous versions used OLED — washed out in sunlight, prone to burn-in, rated for ~3000 hours. V3 uses a Sharp MIP display: always-on, daylight readable, and used in fitness wearables for a reason. Built to last.</p>
-        </div>
-
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">INPUT</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Mechanical keyboard switches</h3>
-          <p style="font-size:0.95rem">Five Cherry MX-compatible mechanical switches paired with a detented rotary encoder. Tactile feel is prioritized over production cost — you know when you've pressed a button, even in a crowd.</p>
-        </div>
-
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">RADIO</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">915 MHz LoRa, carabiner antenna</h3>
-          <p style="font-size:0.95rem">The 915 MHz antenna mounts on a rotating carabiner clip — it stays vertical whether the badge is in your hand or hanging from your belt. Keeps the radiation pattern pointed at the ground where the other radios are.</p>
-        </div>
-
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">POWER</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">1-hour charge. Smart shutdown.</h3>
-          <p style="font-size:0.95rem">V3 uses a buck converter charger for 2–3A charging current — down from 3 hours to ~1 hour for a full charge. A solid-state soft power switch automatically shuts the device down before the battery over-discharges.</p>
-        </div>
-
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">LEDs</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Compass, inputs, and flashlight</h3>
-          <p style="font-size:0.95rem">A single WS2812B strip drives everything — the LED ring doubles as compass display and scroll indicator, individual LEDs light up to confirm button presses, and 6 LEDs form a functional flashlight off the main menu.</p>
-        </div>
-
-        <div style="background:var(--bg-card); padding:2.5rem;">
           <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">MCU</div>
           <h3 style="color:var(--text); margin-bottom:0.75rem">ESP32-S3</h3>
-          <p style="font-size:0.95rem">Upgraded from ESP32 to S3 for better peripheral support, native USB, and more headroom for the FreeRTOS task architecture. The firmware runs a fully task-based system with a custom windowing UI, mesh radio stack, and MessagePack RPC layer.</p>
+          <p style="font-size:0.95rem">ESP32-S3 microcontroller offers WiFi, BLE, and USB connectivity along with a generous amount of GPIO to power a device with many bells and whistles.</p>
+        </div>
+
+        <div style="background:var(--bg-card); padding:2.5rem;">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">INPUT UX</div>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">Tactile Input</h3>
+          <p style="font-size:0.95rem">Five Cherry MX-compatible mechanical switches paired with a detented rotary encoder. Designed to be as satisfying to use as it is functional.</p>
+        </div>
+
+        <div style="background:var(--bg-card); padding:2.5rem;">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">LORA</div>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">Lora Meshing</h3>
+          <p style="font-size:0.95rem">LoRa mesh network with optional encrypted channels. ~500m node to node range. No existing infrastructure required.</p>
+        </div>
+
+        <div style="background:var(--bg-card); padding:2.5rem;">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">NAVIGATION</div>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">GPS and orientation</h3>
+          <p style="font-size:0.95rem">Integrated GPS module for coordinates, magnetometer and dual IMU for gravity-adjusted heading and orientation. The LED ring points to where the action is happening.</p>
+        </div>
+
+        <div style="background:var(--bg-card); padding:2.5rem;">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">OUTPUT UX</div>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">Rich UX</h3>
+          <p style="font-size:0.95rem">A 128×128 OLED display, 61 WS2812B LEDs, haptic motor, and piezo buzzer. Designed to be picked up and used with minimal instruction.</p>
+        </div>
+
+        <div style="background:var(--bg-card); padding:2.5rem;">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">COMPANION APP</div>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">Easy Setup</h3>
+          <p style="font-size:0.95rem">The <a href="https://wayfinder.wyrdwyrks.com/" target="_blank" rel="noopener" style="color:var(--cyan)">companion PWA</a> handles initial setup: device settings, preloaded messages, and saved coordinates. Once configured, the Wayfinder operates fully standalone. No phone required in the field.</p>
         </div>
 
       </div>
@@ -185,17 +178,16 @@
           <span class="tag" style="margin-bottom:1.5rem; display:inline-block">Hardware</span>
           <ul class="feature-list">
             <li>ESP32-S3 microcontroller</li>
-            <li>Custom 4-layer mainboard PCB</li>
-            <li>Sharp Memory-in-Pixel display</li>
-            <li>HopeRF RFM95 LoRa — 915 MHz ISM band</li>
-            <li>Rotating carabiner antenna mount</li>
-            <li>ATGM332D GPS + low-noise amplifier</li>
-            <li>Dedicated magnetometer + 6-axis IMU</li>
+            <li>Custom 4-layer PCB</li>
+            <li>128×128 OLED display</li>
+            <li>SX1276 LoRa</li>
+            <li>Case: carabiner and lanyard attachment points</li>
+            <li>Integrated GPS module</li>
+            <li>Magnetometer + IMU</li>
             <li>5× Cherry MX-compatible mechanical switches</li>
             <li>Detented rotary encoder</li>
-            <li>WS2812B LED ring — compass + scroll + SOS</li>
-            <li>6× LED flashlight strip</li>
-            <li>Piezo buzzer — new message alert</li>
+            <li>61 WS2812B LEDs</li>
+            <li>Buzzer: new message alert</li>
           </ul>
         </div>
 
@@ -206,14 +198,12 @@
             <li>Buck converter charger — ~1 hour full charge</li>
             <li>Solid-state soft power switch</li>
             <li>Auto-shutdown at low battery</li>
-            <li>Linear regulator with bypass for ESP32 rail</li>
           </ul>
           <span class="tag" style="margin-top:2rem; margin-bottom:1.5rem; display:inline-block">Firmware</span>
           <ul class="feature-list">
-            <li>FreeRTOS — fully task-based architecture</li>
-            <li>Custom LoRa mesh — self-healing, zero config</li>
-            <li>MessagePack RPC — Serial, HTTP, ESP-NOW</li>
-            <li>Flexible windowing UI system</li>
+            <li>FreeRTOS: fully task-based architecture</li>
+            <li>Custom LoRa mesh: self-healing, zero config</li>
+            <li>Custom windowing UI system</li>
             <li>Flash-persisted saved messages and locations</li>
             <li>Open source</li>
           </ul>
@@ -235,7 +225,13 @@
         <div style="background:var(--bg-card); padding:2.5rem; opacity:0.7;">
           <span class="product-badge badge-soon" style="margin-bottom:1rem; display:inline-block">Coming Soon</span>
           <h3 style="color:var(--text); margin-bottom:0.75rem">Indoor Geolocation</h3>
-          <p style="font-size:0.95rem">GPS is great outdoors. Inside a convention hall, less so. The plan is fixed anchor nodes using ESP-NOW and RSSI-based positioning to extend tracking indoors — where you actually need it at DEF CON.</p>
+          <p style="font-size:0.95rem">Wi-Fi RSSI-based positioning for indoor tracking where GPS can't reach.</p>
+        </div>
+
+        <div style="background:var(--bg-card); padding:2.5rem; opacity:0.7;">
+          <span class="product-badge badge-soon" style="margin-bottom:1rem; display:inline-block">Coming Soon</span>
+          <h3 style="color:var(--text); margin-bottom:0.75rem">User Documentation</h3>
+          <p style="font-size:0.95rem">Detailed write up on setup and how to use your Wayfinder.</p>
         </div>
 
       </div>
@@ -246,7 +242,7 @@
   <div class="manifesto">
     <blockquote>
       Reserve yours online.<br>
-      <em>Pick it up at DEF CON.</em>
+      <em>Pick it up at DEF CON 34.</em>
       <cite style="margin-top:2rem; display:flex; flex-direction:column; align-items:center; gap:1rem;">
         <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
           <a href="https://buy.stripe.com/REPLACE_ME_COMPLETE" class="btn btn-primary" style="font-size:1.1rem; padding:0.85em 2.5em">Complete — $150&nbsp;→</a>
