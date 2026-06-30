@@ -11,6 +11,22 @@
   });
 })();
 
+// 3D model toggle (Case/PCB)
+(function () {
+  const toggle = document.getElementById('model-toggle');
+  const viewer = document.querySelector('model-viewer');
+  if (!toggle || !viewer) return;
+
+  const models = {
+    case: '../assets/models/V3-Mechanical.glb',
+    pcb: '../assets/models/V3-PCB-fast-preview.glb'
+  };
+
+  toggle.addEventListener('change', () => {
+    viewer.src = toggle.checked ? models.case : models.pcb;
+  });
+})();
+
 // Active nav link
 (function () {
   const links = document.querySelectorAll('.nav-links a');
