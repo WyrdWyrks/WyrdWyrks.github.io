@@ -131,13 +131,14 @@
       </div>
       <div style="display:flex; justify-content:center; margin-top:3rem;">
         <model-viewer
+          exposure="0.4"
           src="assets/models/V3-Mechanical.glb"
           alt="3D model of the Celestial Wayfinder badge"
           auto-rotate
           camera-controls
           shadow-intensity="1"
           orientation="-90deg 270deg 90deg"
-          style="width: 100%; max-width: 800px; height: 300px;"
+          style="width: 100%; max-width: 800px; height: 350px;"
           loading="eager"
           reveal="auto">
           <div slot="poster" style="display:flex; align-items:center; justify-content:center; height:100%; background:var(--bg); color:var(--text-dim); font-family:var(--font-mono); font-size:0.9rem; letter-spacing:0.1em;">
@@ -159,7 +160,7 @@
   </section>
 
   <!-- ── HARDWARE ────────────────────────────────────────── -->
-  <section style="padding-block: 0 5rem;">
+  <section style="padding-block: 5rem;">
     <div class="container">
       <div class="section-header">
         <span class="tag">V3 Hardware</span>
