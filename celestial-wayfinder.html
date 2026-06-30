@@ -7,6 +7,7 @@
   <meta name="description" content="The Celestial Wayfinder — a DEF CON badge that broadcasts your GPS over LoRa mesh radio and guides you to other badge holders with a built-in LED compass. No cell service required." />
   <link rel="icon" type="image/svg+xml" href="assets/svg/logo-mini.svg" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
   <!-- ── NAV ───────────────────────────────────────────── -->
@@ -117,6 +118,42 @@
           <p style="font-size:0.95rem">A ring of LEDs acts as a live compass, rotating to point directly toward other badge holders.</p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3D MODEL VIEWER ──────────────────────────────────── -->
+  <section style="padding-block: 5rem; background:var(--bg-card);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">3D Model</span>
+        <h2 style="margin-top:1rem; color:var(--text)">Explore the <span style="color:var(--amber)">hardware</span></h2>
+      </div>
+      <div style="display:flex; justify-content:center; margin-top:3rem;">
+        <model-viewer
+          src="assets/models/V3-Mechanical.glb"
+          alt="3D model of the Celestial Wayfinder badge"
+          auto-rotate
+          camera-controls
+          shadow-intensity="1"
+          orientation="-90deg 270deg 90deg"
+          style="width: 100%; max-width: 800px; height: 300px;"
+          loading="eager"
+          reveal="auto">
+          <div slot="poster" style="display:flex; align-items:center; justify-content:center; height:100%; background:var(--bg); color:var(--text-dim); font-family:var(--font-mono); font-size:0.9rem; letter-spacing:0.1em;">
+            LOADING 3D MODEL...
+          </div>
+          <div slot="error" style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; background:var(--bg); color:var(--text-dim); padding:2rem; text-align:center;">
+            <div style="font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.1em; color:var(--amber); margin-bottom:1rem;">3D MODEL UNAVAILABLE</div>
+            <p style="font-size:0.95rem;">Unable to load the 3D model. Please check your browser compatibility or internet connection.</p>
+            <p style="font-size:0.85rem; margin-top:1rem; color:var(--text-muted);">Requires a WebGL-enabled browser.</p>
+          </div>
+        </model-viewer>
+      </div>
+      <div style="margin-top:2rem; text-align:center;">
+        <p style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-dim); letter-spacing:0.08em">
+          // INTERACTIVE · DRAG TO ROTATE · SCROLL TO ZOOM
+        </p>
       </div>
     </div>
   </section>
