@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Celestial Wayfinder — WyrdWyrks</title>
   <meta name="description" content="The Celestial Wayfinder — a DEF CON badge that broadcasts your GPS over LoRa mesh radio and guides you to other badge holders with a built-in LED compass. No cell service required." />
-  <link rel="icon" type="image/svg+xml" href="assets/svg/logo-mini.svg" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/svg/logo-mini.svg" />
+  <link rel="stylesheet" href="../css/styles.css" />
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
   <!-- ── NAV ───────────────────────────────────────────── -->
   <nav>
     <div class="container nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/svg/logo-mini.svg" alt="WyrdWyrks logo" class="nav-logo-img" />
+      <a href="/" class="nav-logo">
+        <img src="../assets/svg/logo-mini.svg" alt="WyrdWyrks logo" class="nav-logo-img" />
         <span class="nav-logo-text">Wyrd<span>Wyrks</span></span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li class="nav-has-child">
-          <a href="celestial-wayfinder.html" class="active">Celestial Wayfinder</a>
+          <a href="/celestial-wayfinder" class="active">Celestial Wayfinder</a>
           <ul class="nav-sub">
             <li><a href="https://wayfinder.wyrdwyrks.com/" target="_blank" rel="noopener">Companion App ↗</a></li>
           </ul>
@@ -68,7 +68,7 @@
       <!-- Badge schematic SVG -->
       <div style="display:flex; justify-content:center; align-items:center;">
         <img
-			  src="assets/svg/wayfinder-v3-comms.svg"
+			  src="../assets/svg/wayfinder-v3-comms.svg"
 			  alt="cool graphic showing two beacons communicating"
 			  height="600"
 			  width="600" />
@@ -132,7 +132,7 @@
       <div style="display:flex; justify-content:center; margin-top:3rem;">
         <model-viewer
           exposure="0.4"
-          src="assets/models/V3-Mechanical.glb"
+          src="../assets/models/V3-Mechanical.glb"
           alt="3D model of the Celestial Wayfinder badge"
           auto-rotate
           camera-controls
@@ -333,12 +333,12 @@
     <div class="container footer-inner">
       <span class="footer-copy">© 2026 WyrdWyrks. All rights reserved.</span>
       <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="celestial-wayfinder.html">Celestial Wayfinder Badge</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/celestial-wayfinder/">Celestial Wayfinder Badge</a></li>
       </ul>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
