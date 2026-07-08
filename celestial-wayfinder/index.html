@@ -105,6 +105,32 @@
     </div>
   </section>
 
+  <!-- ── GALLERY ──────────────────────────────────────────── -->
+  <section style="padding-block: 3rem 0;">
+    <div class="container">
+      <div class="gallery-grid">
+
+        <button class="gallery-thumb" data-caption="V3 badge, fresh off the assembly bench.">
+          <img src="/celestial-wayfinder/gallery/device.png" alt="Celestial Wayfinder V3 badge" loading="lazy">
+        </button>
+
+        <button class="gallery-thumb" data-caption="Home screen with one pending message.">
+          <img src="/celestial-wayfinder/gallery/home-screen.jpg" alt="Celestial Wayfinder home screen with a pending message" loading="lazy">
+        </button>
+
+        <button class="gallery-thumb" data-caption="LED ring lit up for navigation.">
+          <img src="/celestial-wayfinder/gallery/navigation.jpg" alt="Close up of the Celestial Wayfinder LED compass ring lit up" loading="lazy">
+        </button>
+
+        <!-- Add more photos here. Copy a block above and update src / alt / data-caption. -->
+
+      </div>
+      <p style="margin-top:1.5rem; font-family:var(--font-mono); font-size:0.72rem; color:var(--text-dim); letter-spacing:0.08em">
+        // CLICK A PHOTO TO ENLARGE
+      </p>
+    </div>
+  </section>
+
   <!-- ── HOW IT WORKS ────────────────────────────────────── -->
   <section style="padding-block: 5rem;">
     <div class="container">
@@ -342,6 +368,17 @@
       </div>
     </div>
   </section>
+
+  <!-- ── GALLERY LIGHTBOX ─────────────────────────────────── -->
+  <div class="lightbox" id="gallery-lightbox" hidden>
+    <button class="lightbox-close" id="gallery-lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="gallery-lightbox-prev" aria-label="Previous photo">&larr;</button>
+    <div class="lightbox-content">
+      <img id="gallery-lightbox-img" src="" alt="">
+      <p id="gallery-lightbox-caption" class="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="gallery-lightbox-next" aria-label="Next photo">&rarr;</button>
+  </div>
 
   <!-- ── DEF CON CTA ─────────────────────────────────────── -->
   <div class="manifesto">
