@@ -371,4 +371,41 @@
 
   <!-- ── GALLERY LIGHTBOX ─────────────────────────────────── -->
   <div class="lightbox" id="gallery-lightbox" hidden>
-    <but
+    <button class="lightbox-close" id="gallery-lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="gallery-lightbox-prev" aria-label="Previous photo">&larr;</button>
+    <div class="lightbox-content">
+      <img id="gallery-lightbox-img" src="" alt="">
+      <p id="gallery-lightbox-caption" class="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="gallery-lightbox-next" aria-label="Next photo">&rarr;</button>
+  </div>
+
+  <!-- ── DEF CON CTA ─────────────────────────────────────── -->
+  <div class="manifesto">
+    <blockquote>
+      Reserve yours online.<br>
+      <em>Pick it up at DEF CON 34.</em>
+      <cite style="margin-top:2rem; display:flex; flex-direction:column; align-items:center; gap:1rem;">
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+          <a href="https://buy.stripe.com/3cIcN62eK6G19qmbig4Ja00" class="btn btn-primary" style="font-size:1.1rem; padding:0.85em 2.5em">Complete — $150&nbsp;→</a>
+          <a href="https://buy.stripe.com/6oU3cwaLg5BX7iegCA4Ja01" class="btn btn-outline" style="font-size:1.1rem; padding:0.85em 2.5em">DIY Kit — $125&nbsp;→</a>
+        </div>
+        <span style="font-size:0.7rem; letter-spacing:0.12em; color:var(--text-muted)">LIMITED QUANTITY · DEF CON PICKUP ONLY</span>
+      </cite>
+    </blockquote>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 WyrdWyrks. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/celestial-wayfinder/">Celestial Wayfinder Badge</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
