@@ -567,6 +567,22 @@ footer {
 
 .footer-links a:hover { color: var(--amber); }
 
+.footer-social {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.footer-social a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.footer-social a:hover { color: var(--cyan); }
+
 /* ── CORNER DECORATION ────────────────────────────────────── */
 .corner-tl, .corner-br {
   position: absolute;
