@@ -28,6 +28,7 @@
           <a href="/celestial-wayfinder" class="active">Celestial Wayfinder</a>
           <ul class="nav-sub">
             <li><a href="https://wayfinder.wyrdwyrks.com/" target="_blank" rel="noopener">Companion App ↗</a></li>
+            <li><a href="https://docs.wyrdwyrks.com/celestial-wayfinder/user-guide.html" target="_blank" rel="noopener">User Guide ↗</a></li>
           </ul>
         </li>
       </ul>
@@ -59,7 +60,7 @@
             <a href="https://buy.stripe.com/6oU3cwaLg5BX7iegCA4Ja01" class="btn btn-outline" style="display:flex; width:100%; justify-content:center;">DIY Kit — $125&nbsp;→</a>
             <div style="margin-top:0.75rem;">
               <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:0.4rem;">DIY KIT · $125</div>
-              <p style="font-size:0.85rem; color:var(--text-dim); max-width:none;">Minimal case with unsoldered switch sockets. Bring your own Cherry MX-compatible switches and make it yours.</p>
+              <p style="font-size:0.85rem; color:var(--text-dim); max-width:none;">Unsoldered switch sockets. Bring your own Cherry MX-compatible switches and make it yours.</p>
             </div>
           </div>
         </div>
@@ -75,9 +76,14 @@
             // LIMITED QUANTITY · DEF CON PICKUP ONLY
           </p>
         </div>
-        <a href="https://wayfinder.wyrdwyrks.com/" target="_blank" rel="noopener" style="display:inline-block; width:fit-content; margin-top:1rem; font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--cyan); border:1px solid var(--cyan-dim); padding:0.4em 1em; clip-path:polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));">
-          Configure your Wayfinder ↗
-        </a>
+        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:1rem;">
+          <a href="https://wayfinder.wyrdwyrks.com/" target="_blank" rel="noopener" style="display:inline-block; width:fit-content; font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--cyan); border:1px solid var(--cyan-dim); padding:0.4em 1em; clip-path:polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));">
+            Configure your Wayfinder ↗
+          </a>
+          <a href="https://docs.wyrdwyrks.com/celestial-wayfinder/user-guide.html" target="_blank" rel="noopener" style="display:inline-block; width:fit-content; font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); border:1px solid var(--amber); padding:0.4em 1em; clip-path:polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));">
+            Read the User Guide ↗
+          </a>
+        </div>
       </div>
       <!-- Badge schematic SVG -->
       <div style="display:flex; justify-content:center; align-items:center;">
@@ -136,26 +142,44 @@
     <div class="container">
       <div class="section-header">
         <span class="tag">How It Works</span>
-        <h2 style="margin-top:1rem; color:var(--text)">No towers. <span style="color:var(--amber)">No apps.</span><br>Just radio.</h2>
+        <h2 style="margin-top:1rem; color:var(--text)">No towers. <span style="color:var(--amber)">No cell service.</span><br>Just radio.</h2>
       </div>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.5px; background:var(--border);">
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:1.25rem;">01 // BROADCAST</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Ping your location</h3>
-          <p style="font-size:0.95rem">Lock onto GPS satellites and broadcast your coordinates, username, a status message, and a color over LoRa. Minimal to no setup required.</p>
+      <div style="max-width:640px; margin-top:3rem;">
+
+        <div style="display:flex; align-items:stretch; gap:1.5rem;">
+          <div style="display:flex; flex-direction:column; align-items:center; flex-shrink:0;">
+            <div style="width:48px; height:48px; border-radius:50%; border:2px solid var(--amber); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; color:var(--amber); flex-shrink:0;">01</div>
+            <div style="flex:1; width:2px; background:var(--border); margin-top:0.5rem;"></div>
+          </div>
+          <div style="padding-bottom:2.5rem;">
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:0.5rem;">BROADCAST</div>
+            <h3 style="color:var(--text); margin-bottom:0.75rem">Ping your location</h3>
+            <p style="font-size:0.95rem">Lock onto GPS satellites and broadcast your coordinates, username, a status message, and a color over LoRa. Minimal to no setup required.</p>
+          </div>
         </div>
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:1.25rem;">02 // MESH</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">The mesh builds itself</h3>
-          <p style="font-size:0.95rem">Every Wayfinder in range automatically relays pings it hears to badges further out. The mesh extends your reach well beyond direct radio line-of-sight.</p>
+        <div style="display:flex; align-items:stretch; gap:1.5rem;">
+          <div style="display:flex; flex-direction:column; align-items:center; flex-shrink:0;">
+            <div style="width:48px; height:48px; border-radius:50%; border:2px solid var(--amber); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; color:var(--amber); flex-shrink:0;">02</div>
+            <div style="flex:1; width:2px; background:var(--border); margin-top:0.5rem;"></div>
+          </div>
+          <div style="padding-bottom:2.5rem;">
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:0.5rem;">MESH</div>
+            <h3 style="color:var(--text); margin-bottom:0.75rem">The mesh builds itself</h3>
+            <p style="font-size:0.95rem">Every Wayfinder in range automatically relays pings it hears to badges further out. The mesh extends your reach well beyond direct radio line-of-sight.</p>
+          </div>
         </div>
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:1.25rem;">03 // NAVIGATE</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">The ring points the way</h3>
-          <p style="font-size:0.95rem">A ring of LEDs acts as a live compass, rotating to point directly toward other badge holders.</p>
+        <div style="display:flex; align-items:stretch; gap:1.5rem;">
+          <div style="display:flex; flex-direction:column; align-items:center; flex-shrink:0;">
+            <div style="width:48px; height:48px; border-radius:50%; border:2px solid var(--amber); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; color:var(--amber); flex-shrink:0;">03</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--amber); margin-bottom:0.5rem;">NAVIGATE</div>
+            <h3 style="color:var(--text); margin-bottom:0.75rem">The ring points the way</h3>
+            <p style="font-size:0.95rem">A ring of LEDs acts as a live compass, rotating to point directly toward other badge holders.</p>
+          </div>
         </div>
 
       </div>
@@ -220,46 +244,35 @@
     <div class="container">
       <div class="section-header">
         <span class="tag">V3 Hardware</span>
-        <h2 style="margin-top:1rem; color:var(--text)">Feature Rich.<br><span style="color:var(--amber)">Anti Minimalist.</span></h2>
-        <p>Third iteration. Battle tested since 2023. Refined through real-world testing at festivals, conventions, and outdoor events.</p>
+        <h2 style="margin-top:1rem; color:var(--text)">Third iteration.<br><span style="color:var(--amber)">Battle tested.</span></h2>
+        <p style="padding:0; margin-top:0.75rem; font-size:1.1rem;">Battle tested since 2023. Refined through real-world testing at festivals, conventions, and outdoor events.</p>
       </div>
 
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1.5px; background:var(--border);">
+      <div style="max-width:70ch; margin-top:1rem;">
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">MCU</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">ESP32-S3</h3>
-          <p style="font-size:0.95rem">ESP32-S3 microcontroller offers WiFi, BLE, and USB connectivity along with a generous amount of GPIO to power a device with many bells and whistles.</p>
+        <div style="padding-block:1.75rem; border-bottom:1px solid var(--border);">
+          <h3 style="color:var(--cyan); margin-bottom:0.5rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase; font-size:1.1rem;">ESP32-S3</h3>
+          <p style="font-size:1rem;">ESP32-S3 microcontroller offers WiFi, BLE, and USB connectivity along with a generous amount of GPIO to power a device with many bells and whistles.</p>
         </div>
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">INPUT UX</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Tactile Input</h3>
-          <p style="font-size:0.95rem">Five Cherry MX-compatible mechanical switches paired with a detented rotary encoder. Designed to be as satisfying to use as it is functional.</p>
+        <div style="padding-block:1.75rem; border-bottom:1px solid var(--border);">
+          <h3 style="color:var(--cyan); margin-bottom:0.5rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase; font-size:1.1rem;">Tactile Input, Rich UX</h3>
+          <p style="font-size:1rem;">Five Cherry MX-compatible mechanical switches paired with a detented rotary encoder make it as satisfying to use as it is functional, backed by a 128×128 OLED display, 61 WS2812B LEDs, a haptic motor, and a piezo buzzer, all designed to be picked up and used with minimal instruction.</p>
         </div>
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">LORA</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Lora Meshing</h3>
-          <p style="font-size:0.95rem">LoRa mesh network with optional encrypted channels. ~500m node to node range. No existing infrastructure required.</p>
+        <div style="padding-block:1.75rem; border-bottom:1px solid var(--border);">
+          <h3 style="color:var(--cyan); margin-bottom:0.5rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase; font-size:1.1rem;">Lora Meshing</h3>
+          <p style="font-size:1rem;">LoRa mesh network with walkie talkie style frequency channels, ~750m node to node range, and no existing infrastructure required. An optional encryption layer lets you assign a key to a channel, keeping it private to only badges that know the key.</p>
         </div>
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">NAVIGATION</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">GPS and orientation</h3>
-          <p style="font-size:0.95rem">Integrated GPS module for coordinates, magnetometer and dual IMU for gravity-adjusted heading and orientation. The LED ring points to where the action is happening.</p>
+        <div style="padding-block:1.75rem; border-bottom:1px solid var(--border);">
+          <h3 style="color:var(--cyan); margin-bottom:0.5rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase; font-size:1.1rem;">GPS and orientation</h3>
+          <p style="font-size:1rem;">Integrated GPS module for coordinates, magnetometer and dual IMU for gravity-adjusted heading and orientation. When GPS is unavailable, the badge falls back to Wi-Fi RSSI-based geolocation using an access point database loaded onto the device, keeping a usable position indoors and outdoors.</p>
         </div>
 
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">OUTPUT UX</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Rich UX</h3>
-          <p style="font-size:0.95rem">A 128×128 OLED display, 61 WS2812B LEDs, haptic motor, and piezo buzzer. Designed to be picked up and used with minimal instruction.</p>
-        </div>
-
-        <div style="background:var(--bg-card); padding:2.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; color:var(--cyan); margin-bottom:1rem;">COMPANION APP</div>
-          <h3 style="color:var(--text); margin-bottom:0.75rem">Easy Setup</h3>
-          <p style="font-size:0.95rem">The <a href="https://wayfinder.wyrdwyrks.com/" target="_blank" rel="noopener" style="color:var(--cyan)">companion PWA</a> handles initial setup: device settings, preloaded messages, and saved coordinates. Once configured, the Wayfinder operates fully standalone. No phone required in the field.</p>
+        <div style="padding-block:1.75rem;">
+          <h3 style="color:var(--cyan); margin-bottom:0.5rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase; font-size:1.1rem;">Easy Setup</h3>
+          <p style="font-size:1rem;">The <a href="https://wayfinder.wyrdwyrks.com/" target="_blank" rel="noopener" style="color:var(--cyan)">companion PWA</a> handles initial setup: device settings, preloaded messages, and saved coordinates. Once configured, the Wayfinder operates fully standalone. No phone required in the field.</p>
         </div>
 
       </div>
@@ -351,7 +364,8 @@
     </div>
   </section>
 
-  <!-- ── COMING SOON ─────────────────────────────────────── -->
+  <!--
+  ── COMING SOON ───────────────────────────────────────
   <section style="padding-block: 0 5rem;">
     <div class="container">
       <div class="section-header">
@@ -375,6 +389,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- ── GALLERY LIGHTBOX ─────────────────────────────────── -->
   <div class="lightbox" id="gallery-lightbox" hidden>
@@ -403,7 +418,7 @@
   </div>
 
   <!-- ── DEF CON PICKUP DETAILS ───────────────────────────── -->
-  <section style="padding-block: 0 5rem;">
+  <section style="padding-block: 5rem;">
     <div class="container">
       <div class="section-header">
         <span class="tag">Pickup Info</span>
